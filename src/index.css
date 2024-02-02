@@ -1,13 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,600;0,700;1,700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800&family=Rubik:ital,wght@0,500;0,600;0,700;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Exo 2', 'Roboto Slab', 'Rubik' sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.btn {
+  color: #fff;
+  padding: 12px 24px;
+  background-image: linear-gradient(45deg, #5651e5 0%, #709dff 100%);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translate(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0,.2);
+  border-bottom: none;
+}
+
+
+
+
+
+
+
+.animate-d
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(
+    -225deg,
+    #5651e5 3%,
+    #5651e5 10%,
+    #5651e5  20%,
+    #5651e5 30%,
+    #1c25a8d9 40%,
+    #873298d9 50%,
+    #873298d9 60%,
+    #1c25a8d9  70%,
+    #709dff 80%,
+    #709dff 90%,
+    #709dff 95%,
+    #709dff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: rgb(146, 140, 145);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
